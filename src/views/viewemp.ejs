@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <% for(var i=0;i<emp.length;i++){%>
+       <tr>
+           <td>
+               <%= emp[i].eid %>
+           </td>
+           <td>
+               <%= emp[i].ename %>
+           </td>
+           <td>
+               <a href="/edit/<%= emp[i].eid %>"></a>
+           </td>
+           <td>
+               <%= emp[i].salary %>
+           </td>
+    
+       </tr>
+</body>
+</html>
